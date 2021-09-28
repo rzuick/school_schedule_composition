@@ -1,18 +1,20 @@
 from school_schedule.student import Student
 from school_schedule.high_school_student import HighSchoolStudent
+from school_schedule.middle_school_student import MiddleSchoolStudent
 
 # first instance
-quinn = Student(
-                "Quinn", 
-                "junior", 
+quinn = MiddleSchoolStudent(
+                "Claire", 
+                "8th Grader", 
                 [
-                    "Pre-Calc", 
-                    "English III", 
-                    "World History", 
+                    "Algebra", 
+                    "Writing", 
+                    "Contemporary Issues", 
                     "Gym", 
-                    "Chemistry", 
-                    "Music Composition"
-                ]
+                    "Earth Science", 
+                    "Painting"
+                ],
+                True
             )
 
 quinn.add_class("Painting")
