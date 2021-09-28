@@ -1,5 +1,6 @@
 from school_schedule.student import Student
 from school_schedule.high_school_student import HighSchoolStudent
+from school_schedule.cohort import Cohort
 
 # first instance
 quinn = Student(
@@ -33,6 +34,5 @@ claire = HighSchoolStudent(
                 clubs=["Algorithms Club"]
             )
 
-students = [quinn, claire]
-for student in students:
-    print(student.summary())
+student_list = [quinn, claire]
+c1 = Cohort("Cohort 1", student_list)
