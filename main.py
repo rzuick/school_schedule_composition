@@ -1,22 +1,22 @@
 from school_schedule.student import Student
 from school_schedule.high_school_student import HighSchoolStudent
 from school_schedule.middle_school_student import MiddleSchoolStudent
-from school_schedule.cohort import Cohort
 
 # first instance
-quinn = MiddleSchoolStudent(
+quinn = Student(
                 "Quinn", 
-                "8th Grader", 
+                "junior", 
                 [
                     "Pre-Calc", 
-                    "Writing", 
-                    "Contemporary Issues", 
+                    "English III", 
+                    "World History", 
                     "Gym", 
-                    "Earth Science", 
-                    "Painting"
-                ],
-                True
+                    "Chemistry", 
+                    "Music Composition"
+                ]
             )
+
+quinn.add_class("Painting")
 
 # second instance
 claire = HighSchoolStudent(
